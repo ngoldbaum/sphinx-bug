@@ -15,7 +15,7 @@ class MyChildException(MyException):
 class BadDirective(Directive):
     required_arguments = 0
 
-    def run(self):  # check if there are spaces in the notebook name
+    def run(self):
         raise MyChildException('error message')
 
 
